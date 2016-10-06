@@ -1,0 +1,77 @@
+<!-- 
+HTML no es un lenguaje, es un tipo de documento. html no tiene lo que son funciones ni variables. No vas a encontrar un main. Son solo brackets y lo que esta adentro es algo, estos brackets son tags. Se escriben <> y </> .  <> es el tag que abre osea { y </> es el tage que cierra }
+solo se pone dentro de estos QUE ES lo qu estara entre los dos tags. Tu buscador lo lee y lo interpreta. Por ejemplo
+
+<p>
+	hola soy edu
+</p>
+
+es un parrafo que dice hola soy edu
+
+Asimismo un html viene conectado con otro tipo de documento que es un CSS. Este es el docjento que le da lo que se le dice estilo: esto es color, marge, tamano, font y todo lo que se te ocurra. Un html solo es solamente texto.
+
+Otra cosa, dentro del el tag, entre los <> le puedes poner especificaciones, como clase o id, lo necesitas para poder hacer referencia a este tag en el css
+-->
+
+ <!-- tag inicial que define la version de html, en este caso html 5 -->
+<!DOCTYPE html>
+
+<!-- tag que define cuando empieza y termina el html -->
+<html>
+	<!-- head es informacion invisible al usuario -->
+	<head>
+		<title>Chobox</title>
+
+		<!-- conexion al css -->
+		<link rel = "stylesheet" type = "text/css" href = "style.css">
+	</head>
+
+	<!-- el body es lo que es la pagina -->
+	<body>
+		<!-- contenedor para separar el contenido del background -->
+		<div id = "container">
+			<!-- header 1, un tipo de texto -->
+			<h1>Chobox Sabella</h1>
+			<!-- imagen -->
+			<img src = "http://i.imgur.com/js5lDZ5.jpg" width = "20%" height = "20%" class = "rounded">
+			<!-- parrafo -->
+			<p>
+				Mi nombre no importa porque todos me dicen chobox, soy una riata progmamando y mchas veces la cago con todo. </br> 
+				Tengo multiples habilidades como
+			</p>
+			<!-- undefined list -->
+			<ul>
+				<!-- list element -->
+				<li>ser pelirojo</li>
+				<li>ser gay</li>
+				<li>tngo bonita letra</li>
+				<li>es pdo esta ojte</li>
+				<li>se usar una camara</li>
+				<li>ando aprendiendo html</li>
+				<li>hhable con la vieja de twitter</li>
+			</ul>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+			<!-- una linea -->
+			<hr>
+			<ul id = "social">
+				<li><img src = "http://i.imgur.com/js5lDZ5.jpg" width = "5%" height = "5%" class = "rounded"></li>
+				<li><img src = "http://i.imgur.com/js5lDZ5.jpg" width = "5%" height = "5%" class = "rounded"></li>
+			<ul>
+		</div>
+	</body>
+</html>

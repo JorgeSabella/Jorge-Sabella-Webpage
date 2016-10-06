@@ -1,0 +1,36 @@
+html, body{
+	background-color: red;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+img{
+	margin: auto;
+}
+/*div del id contenedo*/
+#container{
+	max-width: 1100px;
+	min-width: 700px;
+	margin: 10px auto 10px auto;
+	padding: 30px;
+	border: 4px double #000;
+	background-color: #ffffff;
+}
+
+/*clase que hace a algoo redondo, como la imagen*/
+.rounded{
+ 	border-radius: 50%;
+ }
+
+
+/*afecta al id social, que esta en un undefined lis ul*/
+#social{
+	padding: 15px;
+	margin: 0px auto 0px auto;
+	text-align: center;
+}
+
+/*afecta a los li que esten dentro o sean childs de lo que tnga el id social*/
+#social li{
+	display: inline;
+	margin: 0px 3px;
+}
