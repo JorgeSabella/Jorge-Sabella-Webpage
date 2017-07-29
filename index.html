@@ -1,92 +1,49 @@
-<!-- 
-HTML no es un lenguaje, es un tipo de documento. html no tiene lo que son funciones ni variables. No vas a encontrar un main. Son solo brackets y lo que esta adentro es algo, estos brackets son tags. Se escriben <> y </> .  <> es el tag que abre osea { y </> es el tage que cierra }
-solo se pone dentro de estos QUE ES lo qu estara entre los dos tags. Tu buscador lo lee y lo interpreta. Por ejemplo
-
-<p>
-	hola soy edu
-</p>
-
-es un parrafo que dice hola soy edu
-
-Asimismo un html viene conectado con otro tipo de documento que es un CSS. Este es el docjento que le da lo que se le dice estilo: esto es color, marge, tamano, font y todo lo que se te ocurra. Un html solo es solamente texto.
-
-Otra cosa, dentro del el tag, entre los <> le puedes poner especificaciones, como clase o id, lo necesitas para poder hacer referencia a este tag en el css
--->
-
- <!-- tag inicial que define la version de html, en este caso html 5 -->
-<!DOCTYPE html>
-
-<!-- tag que define cuando empieza y termina el html -->
+<!DOCTYPE HTML>
 <html>
-	<!-- head es informacion invisible al usuario -->
 	<head>
-		<title>Jorge Andres Sabella</title>
-
-		<!-- conexion al css -->
-		<link rel = "stylesheet" type = "text/css" href = "style.css">
+		<title>Griffin Melnick</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
+	<body class="loading">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
 
-	<!-- el body es lo que es la pagina -->
-	<body>
-		<!-- contenedor para separar el contenido del background -->
-		<div id = "container">
-			<!-- header 1, un tipo de texto -->
-			<h1>Jorge Andres Sabella</h1>
-			<!-- imagen -->
-			<img src = "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAijAAAAJDNjZTQ1YmFmLTczZGMtNGViZC1iZmJiLWFiYjQyNDkzYzU0Yg.jpg" width = "20%" height = "20%" class = "rounded">
-			<!-- parrafo -->
-			<p>
-				<b>Monterrey, Nuevo Leon, Mexico</b>
-			</p>
-			<p>
-				University student with passion for programming and photography. Currently stuying Computer Science and Technology Engineering at Tecnologico de Monterrey. Also, Co-Founder of REC Monterrey, a small photography and video marketing business.   </br>  </br>
-				I have multiple technical skills like:
-			</p>
-			<!-- undefined list -->
-			<ul>
-				<!-- list element -->
-				<li>Adobe Photoshop</li>
-				<li>Adobe Lightroom</li>
-				<li>C++</li>
-				<li>Gamemaker studio</li>
-				<li>Web Develpment</li>
-				<li>Computer Hardware</li>
-			</ul>
-			<p><b>Personal Information</b></p>
-			<p>
-				I like to take <a href="http://www.recmonterrey.com">photographs</a>, play videogames and watch Football soccer. 
-				As a computer science and technology engineer I have the need to learn more than what I learn on the classroom to express my ideas the way I want to. My biggest goal for the next two years is to learn the most about computer programming languages like C++ and web development languages like HTML, CSS and JavaScript. By learning these I will be able to develop what I want without having problems with the programming language itself. 
+				<!-- Header -->
+					<header id="header">
+						<h1>Jorge Andres Sabella</h1>
+						<p>Software Engineer</p>
+						<nav>
+							<ul>
+								<li><a href="https://www.facebook.com/jorge.sabella" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="https://twitter.com/Jorge_Sabella" class="icon fa-twitter"><span class="label">Facebook</span></a></li>
+								<li><a href="https://github.com/JorgeSabella" class="icon fa-github"><span class="label">Github</span></a></li>
+								<li><a href="https://www.linkedin.com/in/jorge-andres-sabella-elizondo-6a7946126/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="mailto:jorge_andres1996@hotmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+								<li><a href="principal.html"><button class="btn">Continue</button></a></li>
+							</ul>
 
-			</p>
-			<p><b>Academic / Professional Information</b></p>
-			<p>
-				
-				Studying Bachelor of Science in Computer Science and Technology Engineering at the Monterrey Institute of Technology and Higher Education. Currently in my freshman year, I plan to give everything of me in each semester to learn and achieve my goals. 
-				I want to take the maximum advantage of the opportunities that my university has to offer. Currently I have only done community service this semester but I also would like to do more. First, I would like to go in an exchange program to Italy. Also, I will apply for internships in my country or internationally. Finally, I want to have a full-time job in the last year of my university. 
-				I have done some projects so far such as small personal webpages and games. Also, I participated in a local programming competition of ACM-ICPC Top Teen Programmer 2016.
+						</nav>
+					</header>
 
+				<!-- Footer -->
+					<footer id="footer">
+						<span class="copyright">&copy; Jorge Andres Sabella 2017.</span>
+					</footer>
 
-			</p>
-
-			<p>
-				<b>My own code of ethics</b> </br></br>
-			Today and in my professional future I will always keep in mind ethics in everything I do. We live in a country where people do not often respect ethics, which makes our development be slow and inefficient. I personally believe that in my degree there are many things that I need to always keep in mind, but I will mention the 5 most important points I must respect as a software developer.
-			</p>
-			<ul>
-				<!-- list element -->
-				<li>1. Work with integrity and independence in my professional judgement.</li>
-				<li>2. Respect the privacy of any client, associate or person.</li>
-				<li>3. Always maintain an ethical approach to software development and maintenance management.</li>
-				<li>4. Ensure that the products and modifications created correspond to the highest possible professional standards and all legal margins.</li>
-				<li>5. Always act in a consistent manner with the well-being of the general public.</li>
-			</ul>
-							<!-- una linea -->
-			<hr>
-			<ul id = "social">
-				<li><a href="https://www.facebook.com/jorge.sabella" target="_blank"><img src = "https://p2.zdassets.com/hc/theme_assets/430449/200003010/fb.png" width = "5%" height = "5%" class = "rounded"></li>
-				<li><a href="https://github.com/JorgeSabella" target="_blank"><img src = "https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" width = "5%" height = "5%" class = "rounded"></li>
-				<li><a href="https://www.linkedin.com/in/jorge-andres-sabella-elizondo-6a7946126?trk=nav_responsive_tab_profile_pic" target="_blank"><img src = "http://iuliiakot.github.io/imgs/linkedin.png" width = "5%" height = "5%" class = "rounded"></li>
-			<ul>
+			</div>
 		</div>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script>
+			window.onload = function() { document.body.className = ''; }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
 	</body>
 </html>
